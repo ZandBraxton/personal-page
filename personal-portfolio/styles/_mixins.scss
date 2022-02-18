@@ -2,3 +2,10 @@
     background-color: #1f202B;
     color: #f8f8f7;
 }
+
+
+@mixin Phone() {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+}

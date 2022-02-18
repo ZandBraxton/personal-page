@@ -1,6 +1,11 @@
+@import '../styles/mixins';
+
+
 .container {
   padding: 0 2rem;
 }
+
+
 
 .main {
   min-height: 100vh;
@@ -108,9 +113,8 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+@include Phone() {
+  .hero {
+    padding-top: 100px;
   }
 }
