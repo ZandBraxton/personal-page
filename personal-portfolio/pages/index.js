@@ -12,7 +12,12 @@ export default function Home() {
         <meta charSet='utf-8'/>
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
       </Head>
-      <h1 className={styles.hero}>Home</h1>
+      <div className={styles.home_container}>
+        <div className={styles.hero_container}>
+          <h1 className={styles.hero}>Hey</h1>
+          <h2 className={styles.hero2}>I'm Braxton</h2>
+        </div>
+      </div>
     </Layout>
      
 
