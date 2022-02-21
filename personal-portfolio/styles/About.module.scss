@@ -1,0 +1,13 @@
+@import '../styles/mixins';
+
+.main_wrapper {
+    @include AboutBody;
+}
+
+.about_container {
+    min-height: 100vh;
+}
+
+.hero {
+    padding-top: 100px;
+}

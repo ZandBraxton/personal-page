@@ -1,11 +1,16 @@
-@mixin DarkModeBody {
+@mixin Body {
     background-color: #191b1b;
     color: #ECEBF3;
 }
 
-@mixin DarkModeNav {
+@mixin Nav {
     background-color: #C20114;
     color: #ECEBF3;
+}
+
+@mixin AboutBody {
+    background-color: #C7D6D5;
+    color: #191b1b;
 }
 
 

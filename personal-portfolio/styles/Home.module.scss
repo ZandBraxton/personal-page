@@ -1,16 +1,21 @@
 @import '../styles/mixins';
 
+.main_wrapper {
+  @include Body();
+}
 .home_container {
   display: flex;
   flex-flow: column;
-  align-items: center;
+  margin-left: 5%;
+  justify-content: center;
   min-height: 100vh;
+  position: relative;
 }
 
 .hero_container {
   display: flex;
   flex-flow: column;
-  
+  width: fit-content;
 }
 
 .hero, .hero2 {
@@ -20,13 +25,12 @@
   position: relative;
   letter-spacing: 3px;
   line-height: normal;
-  transition: 1s;
+  transition: background 1s;
   user-select: none;
   background: linear-gradient(to right, #ECEBF3 50%, #F40119 50% );
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.5 ease-out;
   &::before, ::after {
     content: '';
     position: absolute;
@@ -36,7 +40,7 @@
     left: 0;
   }
   &::before {
-    @include DarkModeBody;
+    @include Body;
      animation: peel 0.8s ease 0.5s forwards;
    }
    &:hover {
@@ -46,14 +50,34 @@
    }
 }
 
-
-
 .hero2 {
   &::before {
-   @include DarkModeBody;
-    animation: peel 2s ease 1.5s forwards;
+   @include Body;
+    animation: peel 1.4s ease 1.5s forwards;
   }
 }
+
+.hero_span {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  width: fit-content;
+  margin: auto;
+  opacity: 0;
+  animation: fadeIn 2s ease 2.5s forwards;
+  transition: background 1s;
+  background: linear-gradient(to left, #01F4DC 50%, #ECEBF3 50% );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover {
+    cursor: pointer;
+    background-position: -100%;
+  
+  }
+  
+}
+
+
 
 @keyframes peel {
   to {
@@ -61,33 +85,31 @@
   }
 }
 
-
-
-
-// @keyframes blinkCursor {
-  
-//    0%,75% {
-//      opacity: 1;
-//    }
-//    76%,100% {
-//      opacity: 0;
-//    }
-// }
-
-// @keyframes typing {
-//     0% {
-//       width: 0;
-//     } 
-//     30% {
-//       width: 277.391px;
-//     }
-    
-// }
-
+@keyframes fadeIn {
+  to {
+    opacity: 100%;
+  }
+}
 
 
 @include Phone() {
-  .hero {
-    padding-top: 100px;
+
+  .home_container {
+    flex-flow: column;
+    justify-content: flex-start;
+    margin: auto;
   }
+
+  .hero_container {
+   margin-top: 100px;
+   max-width: 100%;
+  }
+  .hero, .hero2 {
+    font-size: 16vw;
+  }
+
+  .hero_span {
+    text-align: left;
+  }
+
 }
