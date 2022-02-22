@@ -4,8 +4,16 @@ import Image from 'next/image'
 import profiletemp from '../public/images/chrome_2022-02-20_15-29-55.png'
 import styles from '../styles/Home.module.scss'
 import Link from 'next/link'
+import { useEffect, useRef, useState, } from 'react'
+import React from 'react'
+
+
+
 
 export default function Home() {
+
+
+
   return (
     <Layout>
       <Head>
@@ -14,14 +22,72 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1'/>
       </Head>
       <main className={styles.main_wrapper}>
-        <div className={styles.home_container}>
+        <section className={styles.home_container}>
           <div className={styles.hero_container}>
             <h1 className={styles.hero}>Hey</h1>
             <h2 className={styles.hero2}>I'm Braxton</h2>
             <p className={styles.hero_span}>Full Stack Web Developer</p>
           </div>
-        </div>
-
+        </section>
+        <section className={styles.skill_page}>
+          <div className={styles.skill_header}>
+            <p>
+              Experience with multiple front-end and back-end tools, my vision is to be adept with the various skills needed in any enviroment. 
+            </p>
+            <hr></hr>
+            <p>Tools I've used commonly and have grown most comfortable with</p>
+          </div>
+          <ul className={styles.skill_grid}>
+            <li>
+              <span>Javascript</span>
+              <span>Javascript</span>
+            </li>
+            <li>
+              <span>React</span>
+              <span>React</span>
+            </li>
+            <li>
+              <span>CSS/SCSS</span>
+              <span>CSS/SCSS</span>
+            </li>
+            <li>
+              <span>HTML5</span>
+              <span>HTML5</span>
+            </li>
+            <li>
+              <span>NextJs</span>
+              <span>NextJs</span>
+            </li>
+            <li>
+              <span>NodeJs</span>
+              <span>NodeJs</span>
+            </li>
+            <li>
+              <span>Express</span>
+              <span>Express</span>
+            </li>
+            <li>
+              <span>MongoDB</span>
+              <span>MongoDB</span>
+            </li>
+            <li>
+              <span>Webpack</span>
+              <span>Webpack</span>
+            </li>
+            <li>
+              <span>Jest</span>
+              <span>Jest</span>
+            </li>
+            <li>
+              <span>Git</span>
+              <span>Git</span>
+            </li>
+            <li>
+              <span>Github</span>
+              <span>Github</span>
+            </li>
+          </ul>
+        </section>
         {/* Add skills section */}
       </main>
       

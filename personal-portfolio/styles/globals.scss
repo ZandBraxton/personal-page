@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	@include Body();
 	
 }
 ol, ul {
@@ -56,7 +57,7 @@ table {
 
 * {
   box-sizing: border-box;
-  
+//   outline: 1px solid red;
 }
 
 img {

@@ -2,12 +2,13 @@
 
 .main_wrapper {
   @include Body();
+  padding-top: 100px;
 }
 .home_container {
   display: flex;
   flex-flow: column;
   margin-left: 5%;
-  justify-content: center;
+  padding-top: 50px;
   min-height: 100vh;
   position: relative;
 }
@@ -19,7 +20,7 @@
 }
 
 .hero, .hero2 {
-  font-size: 7rem;
+  font-size: 5rem;
   padding: 0 0rem;
   width: fit-content;
   position: relative;
@@ -72,9 +73,119 @@
   &:hover {
     cursor: pointer;
     background-position: -100%;
-  
   }
-  
+}
+
+
+
+.skill_page {
+  @include AboutBody();
+  height: 100vh;
+  opacity: 0;
+  animation: fadeIn 2s ease 3.5s forwards;
+}
+
+.skill_header {
+  font-size: 1.4rem;
+  text-align: center;
+  gap: 1rem;
+  width: 50%;
+  margin: auto;
+  p {
+    background-color: #242727;
+    padding: 1.4rem;
+    border-radius: 20px;
+    border-top: 2px solid #F40119;
+    border-bottom: 2px solid #F40119;
+    border-left: 1px solid #F40119;
+    border-right: 1px solid #F40119;
+  }
+  hr {
+    width: 60%;
+    margin: 2rem auto;
+  }
+}
+
+
+.skill_grid {
+  @include AboutBody();
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 5px;
+  width: 70%;
+  margin: 2rem auto auto auto;
+  padding-bottom: 2rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.4rem;
+  li {
+    position: relative;
+    color: #ECEBF3;
+    background-color: #242727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    overflow: hidden;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: #F40119;
+      transition: 0.5s ease-in-out;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 4px;
+      height: 100%;
+      background: #F40119;
+      transition: 0.5s ease-in-out;
+    }
+    &:hover::before, &:hover::after {
+      width: 50%;
+    }
+
+    span {
+      position: absolute;
+      z-index: 1;
+      transition: 0.5s;
+      color: #ECEBF3;
+      font-size: 2rem;
+    }
+
+    span:nth-child(1) {
+      transition-delay: 0.75s;
+    }
+
+    &:hover span:nth-child(1) {
+      transform: scale(0);
+      transition-delay: 0s;
+    }
+
+    span:nth-child(2) {
+      transform: scale(3);
+      transition-delay: 0s;
+      opacity: 0;
+    }
+
+    &:hover span:nth-child(2) {
+      transform: scale(1);
+      transition-delay: 0s;
+      opacity: 1;
+      z-index: 10;
+      color: #ECEBF3;
+      transition-delay: 0.5s;
+    }
+  }
 }
 
 
@@ -92,16 +203,43 @@
 }
 
 
+@include Tablet() {
+  .main_wrapper {
+    padding-top: 100px;
+  }
+
+  .home_container {
+    padding-top: 0px;
+  }
+
+  .hero, .hero2 {
+    font-size: 4rem;
+  }
+
+  .skill_header {
+    width: 80%;
+  }
+
+  .skill_grid {
+    width: 80%;
+  }
+}
+
+
 @include Phone() {
+
+  .main_wrapper {
+    padding-top: 10px;
+  }
 
   .home_container {
     flex-flow: column;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-top: 0;
     margin: auto;
   }
 
   .hero_container {
-   margin-top: 100px;
    max-width: 100%;
   }
   .hero, .hero2 {
@@ -110,6 +248,84 @@
 
   .hero_span {
     text-align: left;
+    font-size: 6vw;
+    width: 100%;
+    margin-left: 1px;
+  }
+
+  .skill_page {
+  }
+
+  .skill_header {
+    font-size: 1rem;
+    text-align: center;
+    gap: 1rem;
+    width: 90%;
+
+    p {
+      padding: 0.8rem
+    }
+
+    hr {
+      width: 60%;
+      margin: 2rem auto;
+    }
+  }
+ 
+
+  .skill_grid {
+    @include AboutBody();
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    margin: 2rem auto auto auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.4rem;
+    li {
+      position: relative;
+      color: #ECEBF3;
+      background-color: #242727;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 60px;
+      cursor: pointer;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: #F40119;
+        transition: 0.5s ease-in-out;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 4px;
+        height: 100%;
+        background: #F40119;
+        transition: 0.5s ease-in-out;
+      }
+      &:hover::before, &:hover::after {
+        width: 60%;
+      }
+      span {
+        position: absolute;
+        z-index: 1;
+        transition: 0.5s;
+        color: #ECEBF3;
+        font-size: 2rem;
+      }
+      
+    }
   }
 
 }
+
+

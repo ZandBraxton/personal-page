@@ -109,4 +109,53 @@
   }
 }
 
-
+@include Tablet() {
+  .nav {
+    height: auto;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    z-index: 999;
+    overflow: hidden;
+    h1 {
+      padding: 0.8rem 0;
+      font-size: 1.6rem;
+      margin: auto auto auto 1rem;
+      width: 100%;
+    }
+    .menu {
+      display: block;
+      justify-self: flex-end;
+      font-size: 1.6rem;
+      margin: 0.8rem 1rem 0.8rem 0;
+      cursor: pointer;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto);
+      margin: auto;
+      gap: 0.8rem;
+      position: relative;
+      margin-left: 1rem;
+      margin-bottom: 0.6rem;
+    }
+    .hidden {
+      max-height: 0px;
+      opacity: 0;
+      pointer-events: none;
+      transition-property: max-height, opacity;
+      transition-duration: 0.3s, 0.1s;
+      transition-timing-function: ease-in-out;
+ 
+    }
+    .active {
+      max-height: 200px;
+      opacity: 1;
+      transition-property: max-height, opacity;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}

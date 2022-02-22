@@ -9,13 +9,20 @@
 }
 
 @mixin AboutBody {
-    background-color: #C7D6D5;
-    color: #191b1b;
+    background-color: #191b1b;
+    color: #ECEBF3;
+}
+
+
+@mixin Tablet() {
+    @media screen and (max-width: 767px) {
+        @content;
+    }
 }
 
 
 @mixin Phone() {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 480px) {
             @content;
         }
 }
