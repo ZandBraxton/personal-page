@@ -1,25 +1,19 @@
-import Head from 'next/head'
-import Layout from '../components/layout'
-import Image from 'next/image'
-import profiletemp from '../public/images/chrome_2022-02-20_15-29-55.png'
-import styles from '../styles/Home.module.scss'
-import Link from 'next/link'
-import { useEffect, useRef, useState, } from 'react'
-import React from 'react'
-
-
-
+import Head from "next/head";
+import Layout from "../components/layout";
+import Image from "next/image";
+import profiletemp from "../public/images/chrome_2022-02-20_15-29-55.png";
+import styles from "../styles/Home.module.scss";
+import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
+import React from "react";
 
 export default function Home() {
-
-
-
   return (
     <Layout>
       <Head>
         <title>Home</title>
-        <meta charSet='utf-8'/>
-        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={styles.main_wrapper}>
         <section className={styles.home_container}>
@@ -31,11 +25,22 @@ export default function Home() {
         </section>
         <section className={styles.skill_page}>
           <div className={styles.skill_header}>
-            <p>
-              Experience with multiple front-end and back-end tools, my vision is to be adept with the various skills needed in any enviroment. 
-            </p>
-            <hr></hr>
-            <p>Tools I've used commonly and have grown most comfortable with</p>
+            <div className={styles.card}>
+              <div className={styles.content}>
+                <p>
+                  Experience with multiple front-end and back-end tools, my
+                  vision is to be adept with the various skills needed in any
+                  environment.
+                </p>
+              </div>
+            </div>
+            {/* <div className={styles.card}>
+              <div className={styles.content}>
+                <p>
+                  Tools I've used commonly and have grown most comfortable with
+                </p>
+              </div>
+            </div> */}
           </div>
           <ul className={styles.skill_grid}>
             <li>
@@ -90,7 +95,6 @@ export default function Home() {
         </section>
         {/* Add skills section */}
       </main>
-      
     </Layout>
-  )
+  );
 }
