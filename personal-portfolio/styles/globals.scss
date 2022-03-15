@@ -95,6 +95,8 @@ video {
   line-height: 1.6;
   font-size: 100%;
   vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -113,7 +115,7 @@ section {
 }
 body {
   line-height: 1;
-  @include Body();
+  @include BodyBGDark();
 }
 ol,
 ul {
@@ -137,7 +139,7 @@ table {
 
 * {
   box-sizing: border-box;
-  //   outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 img {

@@ -1,16 +1,16 @@
-@mixin Body {
+@mixin BodyBGDark {
   background-color: #12151c;
   color: #ecebf3;
   overflow: hidden;
 }
 
 @mixin Nav {
-  background-color: #661b1c;
+  background-color: #9e292b;
   color: #ecebf3;
 }
 
-@mixin AboutBody {
-  background-color: #1b222c;
+@mixin BodyCardLayer {
+  background: #191d26;
   color: #ecebf3;
 }
 

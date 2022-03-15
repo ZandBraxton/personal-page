@@ -22,25 +22,23 @@ export default function Home() {
             <h2 className={styles.hero2}>I'm Braxton</h2>
             <p className={styles.hero_span}>Full Stack Web Developer</p>
           </div>
+          <Link href="/portfolio">
+            <div className={styles.view_project}>
+              <a>View my projects</a>
+            </div>
+          </Link>
+          {/* <h2 className={styles.view_project}>View my projects</h2> */}
         </section>
         <section className={styles.skill_page}>
           <div className={styles.skill_header}>
             <div className={styles.card}>
               <div className={styles.content}>
                 <p>
-                  Experience with multiple front-end and back-end tools, my
-                  vision is to be adept with the various skills needed in any
-                  environment.
+                  Experience with multiple front-end and back-end tools, driven
+                  to be adept with the various skills needed in any environment.
                 </p>
               </div>
             </div>
-            {/* <div className={styles.card}>
-              <div className={styles.content}>
-                <p>
-                  Tools I've used commonly and have grown most comfortable with
-                </p>
-              </div>
-            </div> */}
           </div>
           <ul className={styles.skill_grid}>
             <li>
