@@ -9,7 +9,7 @@ export default function Layout({ children }) {
   return (
     <div className={styles.layout}>
       <nav className={styles.nav}>
-        <h1>Braxton Zand</h1>
+        <h1>BZ</h1>
         <MenuIcon
           className={styles.menu}
           onClick={() => setisActive(!isActive)}
