@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import Image from "next/image";
-import profiletemp from "../public/images/chrome_2022-02-20_15-29-55.png";
 import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -27,7 +26,6 @@ export default function Home() {
               <a>View my projects</a>
             </div>
           </Link>
-          {/* <h2 className={styles.view_project}>View my projects</h2> */}
         </section>
         <section className={styles.skill_page}>
           <div className={styles.skill_header}>
