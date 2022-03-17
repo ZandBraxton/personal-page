@@ -26,7 +26,7 @@ export default function Layout({ children }) {
             </Link>
           </li>
           <li>
-            <Link href="/portfolio">
+            <Link href="#portfolio_wrapper">
               <a>PORTFOLIO</a>
             </Link>
           </li>
