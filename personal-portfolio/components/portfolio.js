@@ -225,9 +225,15 @@ export default function Portfolio() {
               </div>
             </SwiperSlide>
           </Swiper>
-          <a>
-            <span>View more at Github</span>
-          </a>
+          <div className={styles.view_more}>
+            <a href="https://github.com/ZandBraxton">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              View more at Github
+            </a>
+          </div>
         </div>
       )}
     </main>
