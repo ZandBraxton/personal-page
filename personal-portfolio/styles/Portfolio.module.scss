@@ -307,6 +307,7 @@
         letter-spacing: 2px;
         border-radius: 40px;
         background: linear-gradient(90deg, #0162c8, #55e7fc);
+        text-shadow: 1px 1px 1px #12151c;
       }
       :nth-child(2) {
         background: linear-gradient(90deg, #777bea, #ff72c0);
@@ -315,6 +316,23 @@
     hr {
       margin: 0 auto;
       width: 90%;
+    }
+  }
+
+  .view_more_portable {
+    width: fit-content;
+    font-size: 2rem;
+    margin: 4rem auto;
+    a {
+      padding: 15px 30px;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: #2196f3;
+      border-radius: 15px;
+      background: linear-gradient(90deg, #0162c8, #55e7fc, #777bea, #ff72c0);
+      text-shadow: 1px 1px 1px #12151c;
+      transition-delay: 1s;
+      cursor: pointer;
     }
   }
 }
@@ -339,6 +357,10 @@
         padding: 12px 30px;
       }
     }
+  }
+
+  .view_more_portable {
+    font-size: 1.2rem;
   }
 }
 // .swiper-container-horizontal > .swiper-pagination-bullets,

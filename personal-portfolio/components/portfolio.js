@@ -14,7 +14,6 @@ import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 export default function Portfolio() {
   const { height, width } = useWindowDimensions();
-
   return (
     <main id="portfolio" className={styles.portfolio_wrapper}>
       {width <= 768 ? (
@@ -93,6 +92,11 @@ export default function Portfolio() {
                 <span>Live</span>
               </a>
             </div>
+          </div>
+          <div className={styles.view_more_portable}>
+            <a href="https://github.com/ZandBraxton/shopping-cart">
+              <span>View more at Github</span>
+            </a>
           </div>
         </div>
       ) : (

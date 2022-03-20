@@ -1,15 +1,20 @@
 @import "../styles/mixins";
 
-.about_wrapper {
+.about {
   @include BodyBGDark();
-  height: 90vh;
+  height: 100vh;
+  width: auto;
+}
+
+.flex_wrapper {
   display: flex;
   justify-content: space-evenly;
+  height: 100vh;
 }
 
 .about_container {
   height: 100%;
-  width: 50vw;
+  width: 80%;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -23,6 +28,9 @@
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     .about_title {
       margin-left: 1rem;
       font-size: 3rem;
@@ -32,7 +40,7 @@
     }
 
     .bio {
-      width: auto;
+      width: 50%;
       p {
         margin-left: 1rem;
         margin-bottom: 1rem;
@@ -41,35 +49,32 @@
   }
 }
 
-.about_img_wrapper {
-  position: relative;
-  width: 30vw;
-  height: 90%;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-}
-
 @include Tablet() {
-  .about_wrapper {
+  .about {
+    height: 100vh;
+    margin-top: 400px;
+    margin-bottom: 400px;
+  }
+  .flex_wrapper {
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
+    width: 95%;
+    margin: 2rem auto 0 auto;
   }
 
   .about_container {
     height: auto;
-    width: 80%;
+    width: 70%;
     position: relative;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    // margin-bottom: 1rem;
 
+    div {
+      height: auto;
+    }
     .about_card {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 15px;
@@ -77,7 +82,7 @@
       backdrop-filter: blur(5px);
       border-top: 1px solid rgba(255, 255, 255, 0.5);
       border-left: 1px solid rgba(255, 255, 255, 0.5);
-      padding-bottom: 1rem;
+      padding-bottom: 0;
       .about_title {
         margin-left: 1rem;
         font-size: 3rem;
@@ -89,6 +94,7 @@
       .bio {
         width: auto;
         p {
+          font-size: 1.4rem;
           margin-left: 1rem;
           margin-bottom: 1rem;
         }
@@ -106,5 +112,26 @@
     backdrop-filter: blur(5px);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+@include Phone() {
+  .about_container {
+    width: 95%;
+  }
+  .flex_wrapper {
+    margin: 4rem auto 2rem auto;
+  }
+  .about_img_wrapper {
+    position: relative;
+    min-height: 300px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 400px;
   }
 }

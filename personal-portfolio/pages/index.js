@@ -6,8 +6,10 @@ import React from "react";
 import Portfolio from "../components/portfolio";
 import About from "../components/about";
 import Contact from "../components/contact";
+// import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 export default function Home() {
+  // const { height, width } = useWindowDimensions();
   return (
     <Layout>
       <Head>
