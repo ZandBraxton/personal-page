@@ -37,7 +37,7 @@
   line-height: normal;
   transition: background 1s;
   user-select: none;
-  background: linear-gradient(to right, #ecebf3 50%, #9e292b 50%);
+  background: linear-gradient(to right, #ecebf3 50%, #f7e1b2 50%);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,7 +75,7 @@
   opacity: 0;
   animation: fadeIn 2s ease 2.5s forwards;
   transition: background 1s;
-  background: linear-gradient(to left, #9e292b 50%, #ecebf3 50%);
+  background: linear-gradient(to left, #f7e1b2 50%, #ecebf3 50%);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -93,7 +93,7 @@
   align-items: center;
   margin: auto;
   background: #191d26;
-  box-shadow: 8px 10px 0px #9e292b;
+  box-shadow: 8px 10px 0px #2196f3;
   opacity: 0;
   animation: fadeIn 2s ease 4s forwards;
   overflow: hidden;
@@ -106,7 +106,7 @@
 
   &:hover {
     cursor: pointer;
-    background-color: #9e292b;
+    background-color: #2196f3;
     box-shadow: none;
   }
 
@@ -150,7 +150,7 @@
   max-width: 45vw;
   opacity: 0;
   animation: fadeIn 2s ease 3.5s forwards;
-  box-shadow: 12px 14px 0px #9e292b;
+  box-shadow: 12px 14px 0px #2196f3;
 }
 
 .skill_header {
@@ -167,8 +167,8 @@
   p {
     background-color: #202531;
     padding: 0 10px;
-    border-top: 2px solid #9e292b;
-    border-bottom: 2px solid #9e292b;
+    border-top: 2px solid #2196f3;
+    border-bottom: 2px solid #2196f3;
   }
   hr {
     width: 60%;
@@ -205,7 +205,7 @@
       left: 0;
       width: 4px;
       height: 100%;
-      background: #9e292b;
+      background: #2196f3;
       transition: 0.5s ease-in-out;
     }
     &::after {
@@ -215,7 +215,7 @@
       right: 0;
       width: 4px;
       height: 100%;
-      background: #9e292b;
+      background: #2196f3;
       transition: 0.5s ease-in-out;
     }
     &:hover::before,
@@ -272,7 +272,7 @@
 @keyframes popOut {
   to {
     background-color: #191d26;
-    box-shadow: 20px 20px 1px #9e292b;
+    box-shadow: 20px 20px 1px #2196f3;
   }
 }
 
@@ -330,7 +330,7 @@
     max-width: 100%;
     margin: 2rem;
     height: auto;
-    box-shadow: 8px 8px 0px #9e292b;
+    box-shadow: 8px 8px 0px #2196f3;
   }
 
   .skill_header {
@@ -344,7 +344,7 @@
   @keyframes popOut {
     to {
       background-color: #191d26;
-      box-shadow: 8px 8px 1px #9e292b;
+      box-shadow: 8px 8px 1px #2196f3;
     }
   }
 }
@@ -436,7 +436,7 @@
         left: 0;
         width: 4px;
         height: 100%;
-        background: #9e292b;
+        background: #2196f3;
         transition: 0.5s ease-in-out;
       }
       &::after {
@@ -446,7 +446,7 @@
         right: 0;
         width: 4px;
         height: 100%;
-        background: #9e292b;
+        background: #2196f3;
         transition: 0.5s ease-in-out;
       }
       &:hover::before,

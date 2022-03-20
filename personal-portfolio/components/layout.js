@@ -21,17 +21,17 @@ export default function Layout({ children }) {
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="#about">
               <a>ABOUT ME</a>
             </Link>
           </li>
           <li>
-            <Link href="#portfolio_wrapper">
+            <Link href="#portfolio">
               <a>PORTFOLIO</a>
             </Link>
           </li>
           <li>
-            <Link href="/contact">
+            <Link href="#contact">
               <a>CONTACT</a>
             </Link>
           </li>

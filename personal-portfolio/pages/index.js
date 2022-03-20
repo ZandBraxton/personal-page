@@ -4,6 +4,8 @@ import styles from "../styles/Home.module.scss";
 import Link from "next/link";
 import React from "react";
 import Portfolio from "../components/portfolio";
+import About from "../components/about";
+import Contact from "../components/contact";
 
 export default function Home() {
   return (
@@ -90,7 +92,9 @@ export default function Home() {
         </section>
         {/* Add skills section */}
       </main>
+      <About></About>
       <Portfolio></Portfolio>
+      <Contact></Contact>
     </Layout>
   );
 }

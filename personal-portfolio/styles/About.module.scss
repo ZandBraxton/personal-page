@@ -1,13 +1,110 @@
 @import "../styles/mixins";
 
-.main_wrapper {
-  // @include AboutBody;
+.about_wrapper {
+  @include BodyBGDark();
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .about_container {
-  min-height: 100vh;
+  height: 100%;
+  width: 50vw;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  .about_card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 1rem;
+    .about_title {
+      margin-left: 1rem;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-shadow: 4px 2px 0px #2196f3;
+      width: auto;
+    }
+
+    .bio {
+      width: auto;
+      p {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
 }
 
-.hero {
-  padding-top: 100px;
+.about_img_wrapper {
+  position: relative;
+  width: 30vw;
+  height: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@include Tablet() {
+  .about_wrapper {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .about_container {
+    height: auto;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    .about_card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(5px);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 1rem;
+      .about_title {
+        margin-left: 1rem;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        text-shadow: 4px 2px 0px #2196f3;
+        width: auto;
+      }
+
+      .bio {
+        width: auto;
+        p {
+          margin-left: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .about_img_wrapper {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }

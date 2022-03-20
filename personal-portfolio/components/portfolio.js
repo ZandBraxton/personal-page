@@ -16,7 +16,7 @@ export default function Portfolio() {
   const { height, width } = useWindowDimensions();
 
   return (
-    <main id="portfolio_wrapper" className={styles.portfolio_wrapper}>
+    <main id="portfolio" className={styles.portfolio_wrapper}>
       {width <= 768 ? (
         <div className={styles.flex_wrapper}>
           <div className={styles.project_container}>
