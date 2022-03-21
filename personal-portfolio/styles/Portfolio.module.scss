@@ -2,23 +2,20 @@
 
 .portfolio_wrapper {
   @include BodyBGDark();
-  height: 100vh;
+  height: fit-content;
 }
 
 .swiper_contain {
   position: relative;
   height: auto;
   max-width: 100%;
-  margin-top: 50px;
-  // outline: 1px solid blue;
 }
 
 .mySwiper {
   width: 100%;
   height: fit-content;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 3rem;
-  // outline: 1px solid rgb(43, 255, 0);
 }
 
 .swiper_slide {
@@ -271,8 +268,10 @@
 }
 
 @include Tablet() {
-  .main_wrapper {
+  .portfolio_wrapper {
     overflow: auto;
+    height: fit-content;
+    position: relative;
   }
   .flex_wrapper {
     margin: auto;
@@ -282,8 +281,10 @@
     flex-flow: column;
     justify-content: center;
     gap: 20px;
+    position: relative;
 
     .project_container {
+      clear: both;
       h1 {
         text-align: center;
         font-size: 4rem;
@@ -296,6 +297,7 @@
       justify-content: space-evenly;
       font-size: 2.6rem;
       margin-top: 1.5rem;
+      clear: both;
 
       a {
         position: relative;

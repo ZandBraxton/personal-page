@@ -1,5 +1,124 @@
 @import "../styles/mixins";
 
 .contact_wrapper {
+  margin-top: 100px;
   height: 100vh;
+  width: 100%;
+  display: flex;
+}
+
+.form {
+  @include BodyCardLayer;
+  width: 640px;
+  margin: auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+  .title {
+    h2 {
+      letter-spacing: 6px;
+      border-bottom: 1px solid white;
+      display: inline-block;
+      padding-bottom: 8px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .half {
+    display: flex;
+    justify-content: space-between;
+    .item {
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 24px;
+      width: 48%;
+      input {
+        border-radius: 4px;
+        border: 1px solid white;
+        color: inherit;
+        outline: 0;
+        padding: 16px;
+        width: 100%;
+        height: 44px;
+        background: transparent;
+        font-size: 17px;
+      }
+    }
+  }
+
+  label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    margin-bottom: 16px;
+  }
+
+  .full {
+    margin-bottom: 24px;
+    textarea {
+      background: transparent;
+      border-radius: 4px;
+      border: 1px solid white;
+      color: inherit;
+      outline: 0;
+      padding: 12px 16px;
+      width: 100%;
+      height: 200px;
+      font-size: 17px;
+    }
+  }
+
+  .action {
+    input {
+      background: transparent;
+      border-radius: 4px;
+      border: 1px solid white;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      height: 44px;
+      letter-spacing: 3px;
+      outline: 0;
+      padding: 0 20px 0 22px;
+      margin-right: 10px;
+      &[type="Submit"] {
+        background: white;
+      }
+      &[type="reset"] {
+        color: inherit;
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+
+  .half .item input:focus,
+  .full textarea:focus,
+  .action input[type="reset"]:hover {
+    background: rgba(255, 255, 255, 0.075);
+  }
+}
+
+@include Phone() {
+  .form {
+    .half {
+      flex-flow: column;
+      .item {
+        width: 100%;
+      }
+    }
+
+    .action {
+      display: flex;
+      flex-flow: column;
+      input {
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
 }

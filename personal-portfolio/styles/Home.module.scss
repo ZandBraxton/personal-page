@@ -3,30 +3,36 @@
 .main_wrapper {
   @include BodyBGDark();
   padding-top: 100px;
+  height: 100vh;
   display: flex;
   flex-flow: row;
   justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
   overflow: hidden;
 }
 .home_container {
   display: flex;
   flex-flow: column;
-  min-height: 100vh;
-  width: 50vmax;
+  gap: 6rem;
+  min-height: fit-content;
+  width: 40vmax;
   position: relative;
+  margin-left: 2rem;
 }
 
 .hero_container {
   display: flex;
   flex-flow: column;
-  width: fit-content;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   padding: 5px 10px;
   animation: popOut 1s ease 2.5s forwards;
 }
 
 .hero {
-  font-size: 3rem;
+  font-size: 3vw;
 }
 
 .hero,
@@ -60,7 +66,7 @@
 }
 
 .hero2 {
-  font-size: 4rem;
+  font-size: 5vw;
   &::before {
     @include BodyBGDark();
     animation: peel 1.4s ease 1.5s forwards;
@@ -68,10 +74,9 @@
 }
 
 .hero_span {
-  font-size: 1.4rem;
+  font-size: 2.4vh;
   letter-spacing: 2px;
   width: fit-content;
-  margin: auto;
   opacity: 0;
   animation: fadeIn 2s ease 2.5s forwards;
   transition: background 1s;
@@ -86,12 +91,12 @@
 
 .view_project {
   height: 20vh;
-  width: 25vmax;
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  // margin: auto;
   background: #191d26;
   box-shadow: 8px 10px 0px #2196f3;
   opacity: 0;
@@ -100,7 +105,7 @@
   transition: 0.5s;
   a {
     position: relative;
-    font-size: 1.4rem;
+    font-size: 2.8vh;
     z-index: 10;
   }
 
@@ -147,28 +152,30 @@
 .skill_page {
   @include BodyCardLayer();
   height: fit-content;
-  max-width: 45vw;
+  max-width: 55vw;
   opacity: 0;
   animation: fadeIn 2s ease 3.5s forwards;
   box-shadow: 12px 14px 0px #2196f3;
+  margin-right: 2rem;
 }
 
 .skill_header {
   display: flex;
   flex-flow: row;
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: center;
   gap: 1rem;
   position: relative;
   width: 70%;
   height: auto;
   margin: auto;
-  padding-top: 1rem;
+  padding-top: 2rem;
   p {
     background-color: #202531;
     padding: 0 10px;
     border-top: 2px solid #2196f3;
     border-bottom: 2px solid #2196f3;
+    padding: 20px;
   }
   hr {
     width: 60%;
@@ -178,7 +185,7 @@
 
 .skill_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   gap: 5px;
   width: 70%;
@@ -228,7 +235,7 @@
       z-index: 1;
       transition: 0.5s;
       color: #ecebf3;
-      font-size: 1rem;
+      font-size: 1.6rem;
     }
 
     span:nth-child(1) {
@@ -288,27 +295,33 @@
 @include Tablet() {
   .main_wrapper {
     // padding-top: 100px;
+    height: auto;
     flex-flow: column;
+    gap: 0;
   }
 
   .home_container {
+    height: auto;
     flex-flow: row;
     min-height: auto;
     justify-content: space-between;
     padding-top: 0px;
     width: 100%;
+    gap: 0;
+    margin-left: 0;
   }
 
   .hero_container {
+    width: 45%;
     justify-content: center;
   }
 
   .hero {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   .hero2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .hero,
@@ -316,13 +329,14 @@
   }
 
   .hero_span {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.4rem;
   }
 
   .view_project {
+    width: 45%;
+    margin-right: 10px;
     a {
-      font-size: 1.2rem;
+      font-size: 2rem;
     }
   }
 
@@ -353,20 +367,22 @@
   .main_wrapper {
     flex-flow: column;
     overflow: auto;
+    gap: 0;
   }
 
   .home_container {
     flex-flow: column;
     padding-top: 0;
-    width: auto;
+    width: 100%;
     height: auto;
     min-height: auto;
     margin: auto;
   }
 
   .hero_container {
-    max-width: 100%;
+    width: 90%;
     padding-bottom: 10px;
+    margin: auto;
   }
   .hero,
   .hero2 {

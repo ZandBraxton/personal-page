@@ -229,7 +229,7 @@ export default function Portfolio() {
               </div>
             </SwiperSlide>
           </Swiper>
-          <div className={styles.view_more}>
+          {/* <div className={styles.view_more}>
             <a href="https://github.com/ZandBraxton">
               <span></span>
               <span></span>
@@ -237,7 +237,7 @@ export default function Portfolio() {
               <span></span>
               View more at Github
             </a>
-          </div>
+          </div> */}
         </div>
       )}
     </main>

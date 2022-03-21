@@ -4,6 +4,7 @@
   @include BodyBGDark();
   height: 100vh;
   width: auto;
+  // background: rgb(189, 43, 43);
 }
 
 .flex_wrapper {
@@ -13,12 +14,18 @@
 }
 
 .about_container {
-  height: 100%;
-  width: 80%;
+  height: 70%;
+  width: 95%;
   position: relative;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  div {
+    height: auto;
+  }
 
   .about_card {
     background: rgba(255, 255, 255, 0.05);
@@ -33,18 +40,40 @@
     justify-content: center;
     .about_title {
       margin-left: 1rem;
-      font-size: 3rem;
+      font-size: 4vw;
       letter-spacing: 2px;
       text-shadow: 4px 2px 0px #2196f3;
       width: auto;
+      z-index: 2;
     }
 
     .bio {
       width: 50%;
+      margin-top: auto;
+      margin-bottom: auto;
       p {
+        z-index: 10;
         margin-left: 1rem;
         margin-bottom: 1rem;
+        font-size: 1.1rem;
       }
+
+      span {
+        z-index: -1;
+        // height: 80%;
+      }
+
+      img {
+        z-index: -1;
+      }
+    }
+  }
+}
+
+@include LargeScreen() {
+  .about_container {
+    div {
+      height: 100%;
     }
   }
 }
@@ -93,6 +122,11 @@
 
       .bio {
         width: auto;
+        background: none;
+        border-radius: 0;
+        border: 0;
+        margin-left: 0;
+
         p {
           font-size: 1.4rem;
           margin-left: 1rem;

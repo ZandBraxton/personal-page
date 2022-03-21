@@ -24,7 +24,7 @@ export default function Home() {
             <h2 className={styles.hero2}>I'm Braxton</h2>
             <p className={styles.hero_span}>Full Stack Web Developer</p>
           </div>
-          <Link href="/portfolio">
+          <Link href="#portfolio">
             <div className={styles.view_project}>
               <a>View my projects</a>
             </div>
