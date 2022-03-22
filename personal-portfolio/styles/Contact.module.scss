@@ -81,8 +81,9 @@
       outline: 0;
       padding: 0 20px 0 22px;
       margin-right: 10px;
-      &[type="Submit"] {
+      &[type="submit"] {
         background: #ecebf3;
+        -webkit-appearance: none !important;
       }
       &[type="reset"] {
         color: inherit;
