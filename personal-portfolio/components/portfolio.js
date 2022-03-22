@@ -47,10 +47,10 @@ export default function Portfolio() {
               layout={"responsive"}
             ></Image>
             <div className={styles.link_container}>
-              <a href="https://github.com/ZandBraxton/shopping-cart">
+              <a href="https://github.com/ZandBraxton/Weather-App">
                 <span>Github</span>
               </a>
-              <a href="https://zandbraxton.github.io/shopping-cart/">
+              <a href="https://zandbraxton.github.io/Weather-App/">
                 <span>Live</span>
               </a>
             </div>
@@ -66,10 +66,10 @@ export default function Portfolio() {
               layout={"responsive"}
             ></Image>
             <div className={styles.link_container}>
-              <a href="https://github.com/ZandBraxton/shopping-cart">
+              <a href="https://github.com/ZandBraxton/todo-list">
                 <span>Github</span>
               </a>
-              <a href="https://zandbraxton.github.io/shopping-cart/">
+              <a href="https://zandbraxton.github.io/todo-list/">
                 <span>Live</span>
               </a>
             </div>
@@ -85,10 +85,10 @@ export default function Portfolio() {
               layout={"responsive"}
             ></Image>
             <div className={styles.link_container}>
-              <a href="https://github.com/ZandBraxton/shopping-cart">
+              <a href="https://github.com/ZandBraxton/BattleShip">
                 <span>Github</span>
               </a>
-              <a href="https://zandbraxton.github.io/shopping-cart/">
+              <a href="https://zandbraxton.github.io/BattleShip/">
                 <span>Live</span>
               </a>
             </div>
