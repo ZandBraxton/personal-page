@@ -6,10 +6,8 @@ import React from "react";
 import Portfolio from "../components/portfolio";
 import About from "../components/about";
 import Contact from "../components/contact";
-// import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 export default function Home() {
-  // const { height, width } = useWindowDimensions();
   return (
     <Layout>
       <Head>
@@ -17,11 +15,11 @@ export default function Home() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main className={styles.main_wrapper}>
+      <section className={styles.main_wrapper}>
         <section className={styles.home_container}>
           <div className={styles.hero_container}>
             <h1 className={styles.hero}>Hey</h1>
-            <h2 className={styles.hero2}>I'm Braxton</h2>
+            <h1 className={styles.hero2}>I'm Braxton</h1>
             <p className={styles.hero_span}>Full Stack Web Developer</p>
           </div>
           <Link href="#portfolio">
@@ -92,11 +90,12 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        {/* Add skills section */}
+      </section>
+      <main className={styles.main}>
+        <About></About>
+        <Portfolio></Portfolio>
+        <Contact></Contact>
       </main>
-      <About></About>
-      <Portfolio></Portfolio>
-      <Contact></Contact>
     </Layout>
   );
 }

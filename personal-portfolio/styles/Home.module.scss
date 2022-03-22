@@ -66,7 +66,7 @@
 }
 
 .hero2 {
-  font-size: 5vw;
+  font-size: 4.9vw;
   &::before {
     @include BodyBGDark();
     animation: peel 1.4s ease 1.5s forwards;
@@ -74,7 +74,7 @@
 }
 
 .hero_span {
-  font-size: 2.4vh;
+  font-size: 3vh;
   letter-spacing: 2px;
   width: fit-content;
   opacity: 0;
@@ -96,7 +96,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin: auto;
   background: #191d26;
   box-shadow: 8px 10px 0px #2196f3;
   opacity: 0;
@@ -264,6 +263,11 @@
   }
 }
 
+.main {
+  opacity: 0;
+  animation: fadeIn 2s ease 4s forwards;
+}
+
 @keyframes peel {
   to {
     left: 100%;
@@ -294,7 +298,6 @@
 
 @include Tablet() {
   .main_wrapper {
-    // padding-top: 100px;
     height: auto;
     flex-flow: column;
     gap: 0;
@@ -324,10 +327,6 @@
     font-size: 2.2rem;
   }
 
-  .hero,
-  .hero2 {
-  }
-
   .hero_span {
     font-size: 1.4rem;
   }
@@ -335,6 +334,7 @@
   .view_project {
     width: 45%;
     margin-right: 10px;
+    animation: fadeIn 2s ease 3s forwards;
     a {
       font-size: 2rem;
     }

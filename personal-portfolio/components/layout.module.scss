@@ -23,7 +23,6 @@
     align-items: center;
     margin-right: 2rem;
     gap: 4rem;
-    // outline: 1px solid red;
     li {
       list-style-type: none;
       cursor: pointer;
@@ -139,6 +138,7 @@
       position: relative;
       margin-left: 1rem;
       margin-bottom: 0.6rem;
+      padding-bottom: 0.4rem;
     }
     .hidden {
       max-height: 0px;

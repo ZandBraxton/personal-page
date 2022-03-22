@@ -15,7 +15,7 @@ import useWindowDimensions from "../Hooks/useWindowDimensions";
 export default function Portfolio() {
   const { height, width } = useWindowDimensions();
   return (
-    <main id="portfolio" className={styles.portfolio_wrapper}>
+    <section id="portfolio" className={styles.portfolio_wrapper}>
       {width <= 768 ? (
         <div className={styles.flex_wrapper}>
           <div className={styles.project_container}>
@@ -229,17 +229,8 @@ export default function Portfolio() {
               </div>
             </SwiperSlide>
           </Swiper>
-          {/* <div className={styles.view_more}>
-            <a href="https://github.com/ZandBraxton">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              View more at Github
-            </a>
-          </div> */}
         </div>
       )}
-    </main>
+    </section>
   );
 }

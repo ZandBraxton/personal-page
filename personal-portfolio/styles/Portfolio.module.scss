@@ -16,6 +16,7 @@
   height: fit-content;
   padding-top: 150px;
   padding-bottom: 3rem;
+  overflow-y: auto;
 }
 
 .swiper_slide {
@@ -64,9 +65,9 @@
     height: 50px;
     width: 150px;
     margin: auto;
-    // padding: 15px 45px;
     text-transform: uppercase;
     font-weight: 500;
+    letter-spacing: 2px;
 
     &::before {
       content: "";
@@ -161,7 +162,6 @@
         left: 0;
         width: 100%;
         height: 50%;
-        // background: rgba(255, 255, 255, 0.1);
       }
     }
 
@@ -267,6 +267,25 @@
   }
 }
 
+@include LargeScreen() {
+  .swiper_slide {
+    .img_link {
+      color: #12151c;
+      background: #12151c;
+      position: relative;
+      height: 75px;
+      width: 300px;
+      margin: auto;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    span {
+      line-height: 50px;
+    }
+  }
+}
+
 @include Tablet() {
   .portfolio_wrapper {
     overflow: auto;
@@ -365,8 +384,3 @@
     font-size: 1.2rem;
   }
 }
-// .swiper-container-horizontal > .swiper-pagination-bullets,
-// .swiper-pagination-custom,
-// .swiper-pagination-fraction {
-//   top: 0px !important;
-// }

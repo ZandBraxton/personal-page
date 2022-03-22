@@ -1,40 +1,21 @@
 import styles from "../styles/About.module.scss";
 import Image from "next/image";
 import headshot from "../public/images/headshot-smaller.png";
-import VanillaTilt from "vanilla-tilt";
-import React, { useEffect, useRef } from "react";
 import useWindowDimensions from "../Hooks/useWindowDimensions";
 
 export default function About() {
   const { height, width } = useWindowDimensions();
-  function Tilt(props) {
-    const { options, ...rest } = props;
-    const tilt = useRef(null);
-
-    useEffect(() => {
-      VanillaTilt.init(tilt.current, options);
-    }, [options]);
-
-    return <div ref={tilt} {...rest} />;
-  }
-
-  const options = {
-    speed: 200,
-    max: 10,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
-  };
-
   return (
-    <main id="about" className={styles.about}>
+    <section id="about" className={styles.about}>
       {width <= 768 ? (
         <div className={styles.flex_wrapper}>
-          <section className={styles.about_container}>
+          <div className={styles.about_container}>
             <div className={styles.about_card}>
-              <h2 className={styles.about_title}>GET TO KNOW ME</h2>
-              <div className={styles.bio}>
+              <h1 className={styles.about_title}>GET TO KNOW ME</h1>
+              <section className={styles.bio}>
                 <p>
                   My name is Braxton Zand, a self taught full stack web
-                  developer
+                  developer from San Antonio, Texas.
                 </p>
                 <p>
                   Growing up I've always been invested with technology and
@@ -55,20 +36,19 @@ export default function About() {
                   objectFit={"contain"}
                   objectPosition={"bottom"}
                 ></Image>
-              </div>
+              </section>
             </div>
-          </section>
+          </div>
         </div>
       ) : (
         <div className={styles.flex_wrapper}>
-          <section className={styles.about_container}>
-            {/* <Tilt options={options}> */}
+          <div className={styles.about_container}>
             <div className={styles.about_card}>
               <section className={styles.bio}>
                 <h2 className={styles.about_title}>GET TO KNOW ME</h2>
                 <p>
                   My name is Braxton Zand, a self taught full stack web
-                  developer
+                  developer from San Antonio, Texas.
                 </p>
                 <p>
                   Growing up I've always been invested with technology and
@@ -91,10 +71,9 @@ export default function About() {
                 ></Image>
               </section>
             </div>
-            {/* </Tilt> */}
-          </section>
+          </div>
         </div>
       )}
-    </main>
+    </section>
   );
 }

@@ -4,7 +4,6 @@
   @include BodyBGDark();
   height: 100vh;
   width: auto;
-  // background: rgb(189, 43, 43);
 }
 
 .flex_wrapper {
@@ -60,7 +59,6 @@
 
       span {
         z-index: -1;
-        // height: 80%;
       }
 
       img {
@@ -99,7 +97,6 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    // margin-bottom: 1rem;
 
     div {
       height: auto;
