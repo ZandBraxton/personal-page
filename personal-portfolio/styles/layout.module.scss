@@ -64,6 +64,7 @@
     height: auto;
     position: fixed;
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     z-index: 999;
@@ -79,6 +80,7 @@
       justify-self: flex-end;
       font-size: 1.6rem;
       margin: 0.8rem 1rem 0.8rem 0;
+      line-height: 0px;
       cursor: pointer;
     }
     ul {

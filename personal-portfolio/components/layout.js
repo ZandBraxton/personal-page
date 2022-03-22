@@ -11,7 +11,10 @@ export default function Layout({ children }) {
       <nav className={styles.nav}>
         <h1>BZ</h1>
         <span className={styles.menu}>
-          <MenuIcon onClick={() => setisActive(!isActive)}></MenuIcon>
+          <MenuIcon
+            fontSize={"large"}
+            onClick={() => setisActive(!isActive)}
+          ></MenuIcon>
         </span>
         <ul className={isActive ? styles.active : styles.hidden}>
           <li>
