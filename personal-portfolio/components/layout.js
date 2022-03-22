@@ -10,10 +10,9 @@ export default function Layout({ children }) {
     <div className={styles.layout}>
       <nav className={styles.nav}>
         <h1>BZ</h1>
-        <MenuIcon
-          className={styles.menu}
-          onClick={() => setisActive(!isActive)}
-        ></MenuIcon>
+        <span className={styles.menu}>
+          <MenuIcon onClick={() => setisActive(!isActive)}></MenuIcon>
+        </span>
         <ul className={isActive ? styles.active : styles.hidden}>
           <li>
             <Link href="/">
