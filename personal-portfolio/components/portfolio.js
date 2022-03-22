@@ -94,7 +94,7 @@ export default function Portfolio() {
             </div>
           </div>
           <div className={styles.view_more_portable}>
-            <a href="https://github.com/ZandBraxton/shopping-cart">
+            <a href="https://github.com/ZandBraxton">
               <span>View more at Github</span>
             </a>
           </div>
