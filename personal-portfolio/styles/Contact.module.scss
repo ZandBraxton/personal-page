@@ -17,7 +17,7 @@
   .title {
     h2 {
       letter-spacing: 6px;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #ecebf3;
       display: inline-block;
       padding-bottom: 8px;
       margin-bottom: 32px;
@@ -34,7 +34,7 @@
       width: 48%;
       input {
         border-radius: 4px;
-        border: 1px solid white;
+        border: 1px solid #ecebf3;
         color: inherit;
         outline: 0;
         padding: 16px;
@@ -58,7 +58,7 @@
     textarea {
       background: transparent;
       border-radius: 4px;
-      border: 1px solid white;
+      border: 1px solid #ecebf3;
       color: inherit;
       outline: 0;
       padding: 12px 16px;
@@ -72,7 +72,7 @@
     input {
       background: transparent;
       border-radius: 4px;
-      border: 1px solid white;
+      border: 1px solid #ecebf3;
       cursor: pointer;
       font-size: 13px;
       font-weight: 600;
@@ -82,7 +82,7 @@
       padding: 0 20px 0 22px;
       margin-right: 10px;
       &[type="Submit"] {
-        background: white;
+        background: #ecebf3;
       }
       &[type="reset"] {
         color: inherit;
@@ -101,6 +101,16 @@
   .action input[type="reset"]:hover {
     background: rgba(255, 255, 255, 0.075);
   }
+
+  .icons a:hover {
+    color: #2196f3;
+  }
+}
+
+.error {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: rgb(248 113 113);
 }
 
 @include Phone() {

@@ -1,7 +1,7 @@
 @import "../styles/mixins";
 
 .nav {
-  @include Nav();
+  @include BodyBGDark();
   position: fixed;
   width: 100%;
   height: 50px;

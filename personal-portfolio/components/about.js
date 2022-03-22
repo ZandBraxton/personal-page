@@ -14,20 +14,20 @@ export default function About() {
               <h1 className={styles.about_title}>GET TO KNOW ME</h1>
               <section className={styles.bio}>
                 <p>
-                  My name is Braxton Zand, a self taught full stack web
+                  My name is Braxton Zand, a self-taught full stack web
                   developer from San Antonio, Texas.
                 </p>
                 <p>
                   Growing up I've always been invested with technology and
-                  software, but never found the opportunity to learn it. In 2021
-                  I took it upon myself to change that, going through Harvard's
-                  CS50, Introduction to Computer Science. Onto freecodecamp, and
-                  then The Odin Project.
+                  software, but never found the opportunity to learn it in
+                  depth. In 2021 I took it upon myself to change that, going
+                  through Harvard's CS50, Introduction to Computer Science. Onto
+                  freecodecamp, and then The Odin Project.
                 </p>
                 <p>
                   I've fallen in love with the field and subject since then,
                   taking each day to grow and polish my skills to become an
-                  adept full stack developer
+                  adept full stack developer.
                 </p>
                 <Image
                   className={styles.img}
@@ -47,20 +47,20 @@ export default function About() {
               <section className={styles.bio}>
                 <h2 className={styles.about_title}>GET TO KNOW ME</h2>
                 <p>
-                  My name is Braxton Zand, a self taught full stack web
+                  My name is Braxton Zand, a self-taught full stack web
                   developer from San Antonio, Texas.
                 </p>
                 <p>
                   Growing up I've always been invested with technology and
-                  software, but never found the opportunity to learn it like
-                  this. In 2021 I took it upon myself to change that, going
+                  software, but never found the opportunity to learn it in
+                  depth. In 2021 I took it upon myself to change that, going
                   through Harvard's CS50, Introduction to Computer Science. Onto
                   freecodecamp, and then The Odin Project.
                 </p>
                 <p>
                   I've fallen in love with the field and subject since then,
                   taking each day to grow and polish my skills to become an
-                  adept full stack developer
+                  adept full stack developer.
                 </p>
                 <Image
                   className={styles.img}

@@ -7,6 +7,7 @@ export default function Contact() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -18,6 +19,8 @@ export default function Contact() {
       },
       method: "POST",
     });
+
+    reset();
   }
   return (
     <section id="contact" className={styles.contact_wrapper}>
@@ -31,13 +34,15 @@ export default function Contact() {
         </div>
         <div className={styles.half}>
           <div className={styles.item}>
-            <label htmlFor={"name"}>NAME</label>
+            <label htmlFor={"name"}>FULL NAME</label>
             <input
               type={"text"}
               {...register("name", { required: true })}
               id={"name"}
             />
-            {errors.name?.type === "required" && "Name is required"}
+            <span className={styles.error}>
+              {errors.name?.type === "required" && "* Name is required"}
+            </span>
           </div>
           <div className={styles.item}>
             <label htmlFor={"email"}>EMAIL</label>
@@ -49,9 +54,12 @@ export default function Contact() {
               })}
               id={"email"}
             />
-            {errors.email?.type === "required" && "Email address is required"}
-            {errors.email?.type === "pattern" &&
-              "This is not a valid email address"}
+            <span className={styles.error}>
+              {errors.email?.type === "required" &&
+                "* Email address is required"}
+              {errors.email?.type === "pattern" &&
+                "* This is not a valid email address"}
+            </span>
           </div>
         </div>
         <div className={styles.full}>
@@ -65,11 +73,13 @@ export default function Contact() {
             })}
             id={"message"}
           ></textarea>
-          {errors.message?.type === "required" && "Enter your message"}
-          {errors.message?.type === "minLength" &&
-            "Your message must be longer than 50 characters"}
-          {errors.message?.type === "maxLength" &&
-            "Your message exceeds the max amount of characters"}
+          <span className={styles.error}>
+            {errors.message?.type === "required" && "* Enter your message"}
+            {errors.message?.type === "minLength" &&
+              "* Your message must be longer than 50 characters"}
+            {errors.message?.type === "maxLength" &&
+              "* Your message exceeds the max amount of characters"}
+          </span>
         </div>
         <div className={styles.action}>
           <input type={"submit"} value={"SEND MESSAGE"}></input>

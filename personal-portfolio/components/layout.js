@@ -1,4 +1,4 @@
-import styles from "./layout.module.scss";
+import styles from "../styles/layout.module.scss";
 import Link from "next/link";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
