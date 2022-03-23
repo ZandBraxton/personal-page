@@ -1,6 +1,6 @@
 Live: https://braxtonzand.com/
 
-This is my personal portfolio site, built in NextJS. I chose NextJS because I had no experience with it and wanted to learn more about it. I didn't find myself using the Pages feature that NextJS is known for, as I made a single page app, but I did take the time to learn about it more in depth. I did utilized Next's Image components, as well as CSS modules. 
+This is my personal portfolio site, built in NextJS. I chose NextJS because I had no experience with it and wanted to learn more about it. I didn't find myself using the Pages feature that NextJS is known for, as I made a single page app, but I did take the time to learn about it more in depth. I did utilize Next's Image components, as well as CSS modules. 
 
 The page is responsive and I used various style declarations to achieve the css effects on the project. The contact form is worked in through nodemailer and Next's built in fetch API. I utilized a few libraries as well to achieve some style effects. 
 
