@@ -24,7 +24,7 @@ export default function Home() {
           </div>
           <Link href="#portfolio">
             <div className={styles.view_project}>
-              <a>View my projects</a>
+              <a>Some of my projects</a>
             </div>
           </Link>
         </section>
@@ -45,8 +45,16 @@ export default function Home() {
               <span>Javascript</span>
             </li>
             <li>
+              <span>TypeScript</span>
+              <span>TypeScript</span>
+            </li>
+            <li>
               <span>React</span>
               <span>React</span>
+            </li>
+            <li>
+              <span>Node.js</span>
+              <span>Node.js</span>
             </li>
             <li>
               <span>CSS/SCSS</span>
@@ -57,20 +65,28 @@ export default function Home() {
               <span>HTML5</span>
             </li>
             <li>
-              <span>NextJs</span>
-              <span>NextJs</span>
-            </li>
-            <li>
-              <span>NodeJs</span>
-              <span>NodeJs</span>
-            </li>
-            <li>
               <span>Express</span>
               <span>Express</span>
             </li>
             <li>
-              <span>MongoDB</span>
-              <span>MongoDB</span>
+              <span>NextJs</span>
+              <span>NextJs</span>
+            </li>
+            <li>
+              <span>GraphQL</span>
+              <span>GraphQL</span>
+            </li>
+            <li>
+              <span>Apollo Client</span>
+              <span>Apollo Client</span>
+            </li>
+            <li>
+              <span>SQL</span>
+              <span>SQL</span>
+            </li>
+            <li>
+              <span>MongoDB (NoSQL)</span>
+              <span>MongoDB (NoSQL)</span>
             </li>
             <li>
               <span>Webpack</span>
@@ -83,10 +99,6 @@ export default function Home() {
             <li>
               <span>Git</span>
               <span>Git</span>
-            </li>
-            <li>
-              <span>Github</span>
-              <span>Github</span>
             </li>
           </ul>
         </section>
