@@ -3,6 +3,8 @@ import weather from "../public/images/weather.png";
 import shopping from "../public/images/shopping.png";
 import battleship from "../public/images/battleship.jpg";
 import todo from "../public/images/todo.png";
+import dustbot from "../public/images/dustbot.png";
+import bots from "../public/images/tributebotAndduelbot.png";
 import { EffectCoverflow } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,9 +23,7 @@ export default function Portfolio() {
           <div className={styles.project_container}>
             <h1>Dustbot</h1>
             <Image
-              src={
-                "https://user-images.githubusercontent.com/81108459/179314642-3eb9d59f-a16c-44ee-a1dc-63ee72618c50.png"
-              }
+              src={dustbot}
               alt={"project"}
               width={426}
               height={240}
@@ -35,6 +35,25 @@ export default function Portfolio() {
               </a>
               <a href="https://t.co/Wuewt60uHc">
                 <span>Bot URL</span>
+              </a>
+            </div>
+          </div>
+          <hr></hr>
+          <div className={styles.project_container}>
+            <h1>Duelbot & Tributebot</h1>
+            <Image
+              src={bots}
+              alt={"project"}
+              width={426}
+              height={240}
+              layout={"responsive"}
+            ></Image>
+            <div className={styles.link_container}>
+              <a href="https://github.com/ZandBraxton/discord-bot">
+                <span>Duelbot</span>
+              </a>
+              <a href="https://github.com/ZandBraxton/TributeBot">
+                <span>Tributebot</span>
               </a>
             </div>
           </div>
@@ -142,7 +161,7 @@ export default function Portfolio() {
             className={styles.mySwiper}
           >
             <SwiperSlide className={styles.swiper_slide}>
-              <h1>E-Commerce App</h1>
+              <h1>Dustbot</h1>
               <div className={styles.layer}></div>
               <div className={styles.content}>
                 <div className={styles.link_container}>
@@ -157,9 +176,61 @@ export default function Portfolio() {
                   </a>
                 </div>
                 <Image
-                  src={
-                    "https://user-images.githubusercontent.com/81108459/179314642-3eb9d59f-a16c-44ee-a1dc-63ee72618c50.png"
-                  }
+                  src={dustbot}
+                  alt={"project"}
+                  width={640}
+                  height={360}
+                  layout={"responsive"}
+                ></Image>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiper_slide}>
+              <h1>Duelbot & Tributebot</h1>
+              <div className={styles.layer}></div>
+              <div className={styles.content}>
+                <div className={styles.link_container}>
+                  <a
+                    className={styles.img_link}
+                    href="https://github.com/ZandBraxton/discord-bot"
+                  >
+                    <span className={styles.img_button}>Duelbot</span>
+                  </a>
+                  <a
+                    className={styles.img_link}
+                    href="https://github.com/ZandBraxton/TributeBot"
+                  >
+                    <span className={styles.img_button}>Tributebot</span>
+                  </a>
+                </div>
+                <Image
+                  src={bots}
+                  alt={"project"}
+                  width={640}
+                  height={360}
+                  layout={"responsive"}
+                ></Image>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className={styles.swiper_slide}>
+              <h1>E-Commerce App</h1>
+              <div className={styles.layer}></div>
+              <div className={styles.content}>
+                <div className={styles.link_container}>
+                  <a
+                    className={styles.img_link}
+                    href="https://github.com/ZandBraxton/shopping-cart"
+                  >
+                    <span className={styles.img_button}>Github</span>
+                  </a>
+                  <a
+                    className={styles.img_link}
+                    href="https://zandbraxton.github.io/shopping-cart/"
+                  >
+                    <span className={styles.img_button}>Live</span>
+                  </a>
+                </div>
+                <Image
+                  src={shopping}
                   alt={"project"}
                   width={640}
                   height={360}
