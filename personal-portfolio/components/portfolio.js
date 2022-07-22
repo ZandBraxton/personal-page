@@ -19,6 +19,27 @@ export default function Portfolio() {
       {width <= 768 ? (
         <div className={styles.flex_wrapper}>
           <div className={styles.project_container}>
+            <h1>Dustbot</h1>
+            <Image
+              src={
+                "https://user-images.githubusercontent.com/81108459/179314642-3eb9d59f-a16c-44ee-a1dc-63ee72618c50.png"
+              }
+              alt={"project"}
+              width={426}
+              height={240}
+              layout={"responsive"}
+            ></Image>
+            <div className={styles.link_container}>
+              <a href="https://github.com/ZandBraxton/dustbot">
+                <span>Github</span>
+              </a>
+              <a href="https://t.co/Wuewt60uHc">
+                <span>Bot URL</span>
+              </a>
+            </div>
+          </div>
+          <hr></hr>
+          <div className={styles.project_container}>
             <h1>E-Commerce App</h1>
             <Image
               src={shopping}
@@ -127,19 +148,18 @@ export default function Portfolio() {
                 <div className={styles.link_container}>
                   <a
                     className={styles.img_link}
-                    href="https://github.com/ZandBraxton/shopping-cart"
+                    href="https://github.com/ZandBraxton/dustbot"
                   >
                     <span className={styles.img_button}>Github</span>
                   </a>
-                  <a
-                    className={styles.img_link}
-                    href="https://zandbraxton.github.io/shopping-cart/"
-                  >
-                    <span className={styles.img_button}>Live</span>
+                  <a className={styles.img_link} href="https://t.co/Wuewt60uHc">
+                    <span className={styles.img_button}>Bot URL</span>
                   </a>
                 </div>
                 <Image
-                  src={shopping}
+                  src={
+                    "https://user-images.githubusercontent.com/81108459/179314642-3eb9d59f-a16c-44ee-a1dc-63ee72618c50.png"
+                  }
                   alt={"project"}
                   width={640}
                   height={360}

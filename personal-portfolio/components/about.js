@@ -20,8 +20,8 @@ export default function About() {
                 <p>
                   Growing up I've always been invested with technology and
                   software, but never found the opportunity to learn it in
-                  depth. In 2021 I took it upon myself to change that, going
-                  through Harvard's CS50, Introduction to Computer Science. Onto
+                  depth. I took it upon myself to change that, going through
+                  Harvard's CS50, Introduction to Computer Science. Onto
                   freecodecamp, and then The Odin Project.
                 </p>
                 <p>
@@ -53,8 +53,8 @@ export default function About() {
                 <p>
                   Growing up I've always been invested with technology and
                   software, but never found the opportunity to learn it in
-                  depth. In 2021 I took it upon myself to change that, going
-                  through Harvard's CS50, Introduction to Computer Science. Onto
+                  depth. I took it upon myself to change that, going through
+                  Harvard's CS50, Introduction to Computer Science. Onto
                   freecodecamp, and then The Odin Project.
                 </p>
                 <p>

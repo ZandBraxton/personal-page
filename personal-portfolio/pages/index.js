@@ -57,6 +57,10 @@ export default function Home() {
               <span>Node.js</span>
             </li>
             <li>
+              <span>Python</span>
+              <span>Python</span>
+            </li>
+            <li>
               <span>CSS/SCSS</span>
               <span>CSS/SCSS</span>
             </li>
